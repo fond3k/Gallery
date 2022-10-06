@@ -29,3 +29,7 @@ body{
 .image:nth-child(2n){
     grid-row: span 2;
 }
+.section__top_header{
+
+}
+.
