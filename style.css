@@ -11,6 +11,7 @@
 .root {
     --color1: rgb(246, 9, 48);
     --color2: #181213;
+    --bl: 24px;
 }
 
 body {
@@ -41,7 +42,10 @@ body {
 
 .header,
 footer,
-section {}
+section {
+    padding: 100px 0;
+    
+}
 
 header {
     padding: 100px 0;
@@ -71,10 +75,16 @@ footer {
     border-radius: 50%;
 }
 
-.btn-primary {}
+.btn-primary {
+    font-size: 24px;    
+}
 
-.btn-lg {}
+.btn-lg {
+    font-size: var(--bl);
+}
 
-.header__btm {}
+.header__btm {
+    
+}
 
 .btn-info {}
