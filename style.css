@@ -1,0 +1,31 @@
+@import url(..//../FONTS/fontello/fontello.woff);
+@import url(..//../FONTS/fontello/fontello.woff2);
+@import url(..//../bootstrap-5.2.1/bootstrap-5.2.1/dist/css/bootstrap.min.css);
+@import url(..//../FONTS/Roboto/Roboto-Black.ttf);
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: 240px;
+    grid-auto-flow: dense;
+    grid-gap: 15px;
+}
+.image{
+    background: var(--bg) center/cover;
+}
+.image:nth-child(5n){
+    grid-column: span 2;
+    grid-row: span 2;   
+}
+.image:nth-child(2n){
+    grid-row: span 2;
+}
