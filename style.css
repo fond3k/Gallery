@@ -3,33 +3,78 @@
 @import url(..//../bootstrap-5.2.1/bootstrap-5.2.1/dist/css/bootstrap.min.css);
 @import url(..//../FONTS/Roboto/Roboto-Black.ttf);
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto';
+.root {
+    --color1: rgb(246, 9, 48);
+    --color2: #181213;
 }
 
-.gallery{
+body {
+    font-family: 'Roboto''fontello' sans-serif;
+}
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-auto-rows: 240px;
     grid-auto-flow: dense;
     grid-gap: 15px;
+    justify-content: center;
 }
-.image{
+
+.image {
     background: var(--bg) center/cover;
 }
-.image:nth-child(5n){
+
+.image:nth-child(5n) {
     grid-column: span 2;
-    grid-row: span 2;   
-}
-.image:nth-child(2n){
     grid-row: span 2;
 }
-.section__top_header{
+
+.image:nth-child(2n) {
+    grid-row: span 2;
+}
+
+.header,
+footer,
+section {}
+
+header {
+    padding: 100px 0;
+}
+
+header,
+footer {
+    background: var(--color1);
+    background: -moz-linear-gradient(left, var(--color1)0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(left, var(--color1) 0%, var(--color2)100%);
+    background: linear-gradient(to right, var(--color1) 0%, var(--color2)100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
 
 }
-.
+
+.header__top {
+    display: grid;
+    background-color: #ffc0cb;
+}
+
+.nav {}
+
+.btn {
+    background-color: rgb(94, 214, 156);
+    height: max-content;
+    width: max-content;
+    border-radius: 50%;
+}
+
+.btn-primary {}
+
+.btn-lg {}
+
+.header__btm {}
+
+.btn-info {}
